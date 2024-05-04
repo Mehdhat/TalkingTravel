@@ -1,0 +1,400 @@
+body {
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+    sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+    monospace;
+}
+
+:root {
+    --purple: #8A53FF;
+    --gray: #495367;
+    --brown: #3E3E3E;
+    --offwhite: #EEEEEE;
+}
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+    background-color: white;
+    color: var(--purple);
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 13px 27px -5px, rgba(0, 0, 0, 0.3) 0px 8px 16px -8px;
+    width: 100%;
+}
+
+.logo {
+    margin-right: 20px;
+}
+
+.logo a {
+    color: black;
+    text-decoration: none;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    font-style: oblique;
+    font-size: 20px;
+}
+
+.logo a span {
+    color: var(--purple);
+    font-weight: 900;
+    font-style: normal;
+}
+
+.nav-elements ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+}
+
+.nav-elements li {
+    margin-right: 20px;
+}
+
+.nav-elements a {
+    color: var(--purple);
+    text-decoration: none;
+}
+
+/* Responsive styles */
+@media (max-width: 768px) {
+    nav {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .nav-elements {
+        margin-top: 20px;
+        /* Adjust spacing */
+        font-size: 10px;
+    }
+
+    .nav-elements li {
+        margin-bottom: 14px;
+    }
+
+    .logo {
+        margin-bottom: 20px;
+        /* Adjust spacing */
+    }
+}
+
+#story {
+    width: 100%;
+    color: var(--white);
+    text-align: left;
+    padding-top: 100px;
+    padding-bottom: 100px;
+    justify-content: center;
+    align-items: center;
+    height: max-content;
+    background-image: url(./85b5ebeb782433cb7cacd99fd27c8505.jpg);
+
+    margin-top: -17px;
+    background-size: cover;
+    padding-left: 30px;
+    padding-right: 20px;
+}
+
+#story h1 {
+    font-size: 40px;
+    font-weight: 500;
+    display: block;
+    color: var(--purple);
+    font-weight: bolder;
+    line-height: 1.3;
+}
+
+#story h1 span {
+    color: black;
+}
+
+#story h2 {
+    font-size: 20px;
+    font-weight: 300;
+    text-transform: capitalize;
+    color: black;
+    margin-top: 20px;
+    line-height: 1.3;
+}
+
+#story button {
+    background-color: var(--purple);
+    padding: 10px 20px;
+    border: none;
+    outline: none;
+    cursor: pointer;
+    margin-top: 20px;
+    text-decoration: none;
+    font-size: 16px;
+}
+
+#story button.white-btn {
+    background-color: white;
+    color: black;
+}
+
+#story button a {
+    text-decoration: none;
+    color: white;
+}
+
+#story button.white-btn a {
+    color: black;
+}
+
+@media (max-width: 768px) {
+    #story h2 {
+        font-size: 14px;
+    }
+}
+
+#about img {
+    height: 450px;
+    padding: 20px;
+}
+#about h6,
+#skills h6,
+#form h6, 
+#posts h6 {
+    color: var(--purple);
+    font-weight: bold;
+    text-transform: uppercase;
+    text-align: center;
+}
+
+#about h1,
+#skills h1,
+#form h1,
+#posts h1 {
+    color: black;
+    font-weight: bolder;
+    text-align: center;
+}
+#about h6, #about h1{
+    text-align: left;
+}
+#about p {
+    color: black;
+    text-align: justify;
+}
+
+#about a {
+    text-decoration: none;
+    color: var(--purple);
+}
+
+#skills h6
+#form {
+    text-align: center;
+}
+
+#skills .card {
+    padding: 20px;
+    margin: 20px;
+    border: none;
+    outline: none;
+    width: 100%;
+    /* Make cards fill the width */
+    max-width: 300px;
+    /* Limit maximum width of cards */
+    display: inline-block;
+    /* Ensure cards display in a row */
+    vertical-align: top;
+    /* Align cards to the top */
+}
+
+#skills .card img {
+    border-radius: 20px;
+    width: 100%;
+    /* Make images fill the card width */
+    height: auto;
+    /* Maintain aspect ratio */
+}
+
+#skills h5 {
+    color: black;
+    font-weight: bold;
+}
+
+#skills p {
+    color: var(--purple);
+    font-weight: bold;
+}
+
+@media screen and (min-width: 768px) {
+    #skills .card {
+        max-width: calc(33.33% - 40px);
+        padding: 5px;
+    }
+}
+
+@media screen and (max-width: 1200px) {
+    #skills .card {
+        max-width: 1200px;
+        /* Limit maximum width of cards on screens wider than 1200px */
+        width: auto;
+        /* Allow cards to take full width on wider screens */
+        display: block;
+        /* Display cards as block elements */
+        margin: 0 auto;
+        /* Center cards horizontally */
+        padding: 5px;
+    }
+}
+
+#form {
+    background-image: url(./WhatsApp\ Image\ 2024-05-03\ at\ 19.14.50_aaf06d69.jpg);
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+
+.container-form {
+    background-color: white;
+    height: 600px;
+    width: 580px!important;
+    margin: 0 auto;
+    display: block;
+    justify-content: center;
+    align-items: center;
+    padding: 30px;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+}
+
+.container-form h2 {
+    font-weight: bolder;
+    text-align: left;
+}
+
+#form .container-form p {
+    text-align: left;
+    color: gray;
+    font-weight: normal;
+}
+
+.travel-form {
+    display: flex;
+    flex-direction: column;
+}
+
+.travel-form input[type="text"],
+.travel-form select,
+.travel-form textarea {
+    margin-bottom: 15px;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+.travel-form button {
+    padding: 10px 20px;
+    width: 35%;
+    background-color: var(--purple);
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.travel-form button:hover {
+    background-color: #0056b3;
+}
+
+@media (max-width: 768px) {
+
+    .travel-form input[type="text"],
+    .travel-form select,
+    .travel-form textarea,
+    .travel-form button {
+        width: 100%;
+    }
+}
+
+.travel-form select {
+    background-color: white;
+    color: gray;
+}
+
+#posts {
+    text-align: center;
+    padding: 20px;
+}
+
+.row {
+    margin-bottom: 20px;
+}
+.city-card {
+    border: 1px solid #ddd;
+    padding: 20px;
+    margin: 10px;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    background-color: #f9f9f9;
+    display: inline-block; /* Display cards in a line */
+    width: calc(33.33% - 20px); /* Adjust width for three cards */
+    vertical-align: top; /* Align cards at the top */
+}
+
+.city-card img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 4px;
+}
+
+.city-card h3 {
+    font-size: 18px;
+    margin: 10px 0;
+}
+
+.city-card p {
+    font-size: 14px;
+    color: #555;
+}
+
+.city-card a {
+    text-decoration: none;
+    color: #007bff;
+    font-weight: bold;
+}
+
+/* Responsive layout for small devices */
+@media (max-width: 768px) {
+    .city-card {
+        width: 100%; /* Full width on small screens */
+        margin: 10px 0;
+    }
+}
+.gallery p small{
+    color: var(--purple)!important;
+}
+.footer{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+    width: 100%;
+    color: gray;
+}
+.footer li a{
+    color: gray;
+}
+@media (max-width: 768px) {
+    .footer {
+       font-size: 14px;
+       display: block;
+       text-align: center;
+    }
+    .footer.nav-elements{
+      text-align: center;
+    }
+}
